@@ -7,3 +7,11 @@ products based on ratings, identifying bestsellers, and analyzing price distribu
 were created using Redshift’s built-in charting tools to interpret results more effectively. This 
 project demonstrates practical use of ETL workflows and cloud-based data warehousing for large
 scale e-commerce data analysis.
+
+## Dataset : 
+We used the Amazon India Products 2023 dataset, which includes product-level information 
+from various categories listed on Amazon.in. The dataset was uploaded to Amazon S3 and later 
+loaded, cleaned, and transformed using AWS Glue. The dataset contains details such as: 
+
+![image](https://github.com/user-attachments/assets/052bd14c-c5a9-481e-b66b-0cb9949c1ece)
+
