@@ -25,6 +25,7 @@ valuable premium items.
 
 ## Queries: 
 1. Creating an external schema named amazon_india_schema_cleaned1 in Amazon Redshift, which links Redshift to your Glue Data Catalog so that Redshift can query external tables.
+   
    ###QUERY### 
 
    CREATE EXTERNAL SCHEMA amazon_india_schema_cleaned1 
@@ -44,3 +45,14 @@ valuable premium items.
    
    ![image](https://github.com/user-attachments/assets/b98ad691-ca02-4ef9-8eed-15d7d992b1df)
 
+
+3. Creating a local Redshift table named amazon_products_local_redshift_cleaned1 by copying all the data from the external table in the schema amazon_india_schema_cleaned1. It loads the cleaned external table into Redshift's local storage for faster querying and analysis.
+   
+   ###QUERY###
+   
+   LOCAL TABLE CREATED ON REDSHIFT 
+   (amazon_products_local_redshift_cleaned1) 
+   CREATE TABLE amazon_products_local_redshift_cleaned1 AS 
+   SELECT * FROM 
+   amazon_india_schema_cleaned1."amazon_products_clean_tableamazon_products_clean
+   ed1";
