@@ -67,6 +67,13 @@ valuable premium items.
    ![image](https://github.com/user-attachments/assets/4a453efe-4911-4860-917d-4952dc24347d)
 
 
+5. Filtering external table records where stars rating is more than 1.
+   
+   ###QUERY###
+   
+   SELECT * FROM  amazon_india_schema_cleaned1."amazon_products_clean_tableamazon_products_cleaned1" where stars>1;
+
+   ![image](https://github.com/user-attachments/assets/a4e67e2e-0e98-46e6-bf1f-83cab4e717c2)
 
 
  
