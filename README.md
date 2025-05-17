@@ -24,13 +24,23 @@ valuable premium items.
 3. Bestseller Insights: Analyzed products marked as bestsellers to understand popular trends.
 
 ## Queries: 
-1. Creating an external schema named amazon_india_schema_cleaned1 in Amazon Redshift, 
-which links Redshift to your Glue Data Catalog so that Redshift can query external tables.
+1. Creating an external schema named amazon_india_schema_cleaned1 in Amazon Redshift, which links Redshift to your Glue Data Catalog so that Redshift can query external tables.
+   ###QUERY### 
 
-###QUERY### 
+   CREATE EXTERNAL SCHEMA amazon_india_schema_cleaned1 
+   FROM DATA CATALOG 
+   DATABASE 'amazon_products_clean_db' 
+   IAM_ROLE 'arn:aws:iam::841162699551:role/RedshiftS3AccessRole' 
+   CREATE EXTERNAL DATABASE IF NOT EXISTS; 
 
-CREATE EXTERNAL SCHEMA amazon_india_schema_cleaned1 
-FROM DATA CATALOG 
-DATABASE 'amazon_products_clean_db' 
-IAM_ROLE 'arn:aws:iam::841162699551:role/RedshiftS3AccessRole' 
-CREATE EXTERNAL DATABASE IF NOT EXISTS; 
+
+2. Retrieving the first 10 rows from the external table amazon_products_clean_tableamazon_products_cleaned1 in the external schema amazon_india_schema_cleaned1.
+   
+   ###QUERY###
+   
+   SELECT * FROM 
+   amazon_india_schema_cleaned1."amazon_products_clean_tableamazon_products_clean
+   ed1" LIMIT 10;
+   
+   ![image](https://github.com/user-attachments/assets/b98ad691-ca02-4ef9-8eed-15d7d992b1df)
+
