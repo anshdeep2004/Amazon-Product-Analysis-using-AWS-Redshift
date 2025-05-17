@@ -76,11 +76,14 @@ valuable premium items.
    ![image](https://github.com/user-attachments/assets/a4e67e2e-0e98-46e6-bf1f-83cab4e717c2)
 
 
- 6. Filtering local Redshift table records with stars > 1.
-    
-   ###QUERY### 
+6. Filtering local Redshift table records with stars > 1.
+   
+   ###QUERY###
    
    SELECT * FROM amazon_products_local_redshift_cleaned1 where stars>1;
 
-   ![image](https://github.com/user-attachments/assets/edf27ba9-9001-46db-89e0-4b767cd75e0d)
+    ![image](https://github.com/user-attachments/assets/d841de4d-7e20-4055-9fbd-7917df618313)
+
+
+ 
 
