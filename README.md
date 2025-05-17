@@ -56,3 +56,17 @@ valuable premium items.
    SELECT * FROM 
    amazon_india_schema_cleaned1."amazon_products_clean_tableamazon_products_clean
    ed1";
+
+
+4. Displaying the first 20 rows from the local Redshift table.
+   
+   ###QUERY###
+   
+   SELECT * FROM amazon_products_local_redshift_cleaned1 LIMIT 20;
+
+   ![image](https://github.com/user-attachments/assets/4a453efe-4911-4860-917d-4952dc24347d)
+
+
+
+
+ 
