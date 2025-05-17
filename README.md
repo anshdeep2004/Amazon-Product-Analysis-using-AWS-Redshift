@@ -103,3 +103,10 @@ valuable premium items.
    ![image](https://github.com/user-attachments/assets/d12a1317-4580-49f2-abe0-36514840d52f)
 
 
+9. Fetching all products where the isbestseller status is explicitly set as either 'true' or 'false', excluding any null or unknown values.
+    
+   ###QUERY### 
+
+   SELECT * FROM amazon_products_local_redshift_cleaned1 where isbestseller='true' or isbestseller='false';
+
+   ![image](https://github.com/user-attachments/assets/cd719c31-a914-4264-8e0c-3f6cf0d70c13)
