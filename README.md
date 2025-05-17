@@ -94,3 +94,12 @@ valuable premium items.
    ![image](https://github.com/user-attachments/assets/36d1645c-6534-4989-ae00-784fd3f23c0a)
 
 
+8. Fetching all best-selling products from the local table. 
+ 
+   ###QUERY### 
+ 
+   SELECT * FROM amazon_products_local_redshift_cleaned1 where isbestseller='true';
+
+   ![image](https://github.com/user-attachments/assets/d12a1317-4580-49f2-abe0-36514840d52f)
+
+
