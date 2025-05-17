@@ -15,3 +15,11 @@ loaded, cleaned, and transformed using AWS Glue. The dataset contains details su
 
 ![image](https://github.com/user-attachments/assets/052bd14c-c5a9-481e-b66b-0cb9949c1ece)
 
+## Objectives : 
+After transforming the data, we loaded it into Amazon Redshift Serverless to perform the 
+following analyses: 
+1. Filter by Ratings: Focused on products with stars > 1 to ensure quality feedback. 
+2. Premium Product Analysis: Identified high-rated products priced above average to find 
+valuable premium items. 
+3. Bestseller Insights: Analyzed products marked as bestsellers to understand popular trends.
+
