@@ -85,5 +85,12 @@ valuable premium items.
     ![image](https://github.com/user-attachments/assets/d841de4d-7e20-4055-9fbd-7917df618313)
 
 
- 
+7. Fetching products with a listprice above the average and stars > 1.
+   
+   ###QUERY###
+   
+   SELECT * FROM amazon_products_local_redshift_cleaned1 where listprice>(select avg(listprice) from amazon_products_local_redshift_cleaned1) and stars>1;
+
+   ![image](https://github.com/user-attachments/assets/36d1645c-6534-4989-ae00-784fd3f23c0a)
+
 
